@@ -1,11 +1,11 @@
 matriz = [
-    [4, 7, 2],
-    [1, 9, 6],
-    [8, 3, 5]
+    [11, 7, 3],
+    [5, 10, 15],
+    [8, 12, 14]
 ]
 
 # Valor que estamos buscando
-valor_buscado = 9
+valor_buscado = 10
 
 # Inicializar variables para rastrear la posición del valor
 fila_encontrada = -1
