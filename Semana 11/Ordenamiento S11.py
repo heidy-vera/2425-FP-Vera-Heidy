@@ -1,8 +1,8 @@
 # Crear una matriz bidimensional (3x3) para el ejemplo.txt
 matriz = [
-    [6, 2, 8],
-    [4, 7, 2],
-    [15, 5, 10]
+    [15, 10, 5],
+    [4, 7, 1],
+    [9, 4, 6]
 ]
 
 # Función para ordenar una fila de manera ascendente utilizando Bubble Sort
@@ -29,3 +29,4 @@ for fila in matriz:
 # Mostrar la matriz ordenada
 print("\nMatriz Ordenada por Filas:")
 mostrar_matriz(matriz)
+

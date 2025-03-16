@@ -1,28 +1,21 @@
-matriz = [
-    [11, 7, 3],
-    [5, 10, 15],
-    [8, 12, 14]
+#Busqueda en la matriz Bidimensional
+def buscar_valor(matriz,valor):
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j]==valor:
+                return i,j #Retorna a la posicion si esta se encuentra
+    return None # retornara a none si no esta
+# Matriz 3x3
+matriz= [
+    [15 ,30,35],
+    [20 ,10 ,20],
+    [40 ,50,60]
 ]
+# Solicitar el valor a buscar
+valor_buscar = int(input("Ingrese el valor que se esta buscando en la matriz:"))
+resultado = buscar_valor(matriz,valor_buscar)
 
-# Valor que estamos buscando
-valor_buscado = 10
-
-# Inicializar variables para rastrear la posición del valor
-fila_encontrada = -1
-columna_encontrada = -1
-
-# Recorrer la matriz para buscar el valor
-for fila in range(len(matriz)):
-    for columna in range(len(matriz[fila])):
-        if matriz[fila][columna] == valor_buscado:
-            fila_encontrada = fila
-            columna_encontrada = columna
-            break  # Detener la búsqueda una vez que se encuentra el valor
-    if fila_encontrada != -1:
-        break  # Salir del bucle exterior si se encuentra el valor
-
-# Verificar si se encontró el valor y mostrar la posición
-if fila_encontrada != -1:
-    print(f"Se encontró {valor_buscado} en la fila {fila_encontrada} y columna {columna_encontrada}.")
+if resultado:
+    print(f"Valor encontrado en la posicion :{resultado}")
 else:
-    print(f"{valor_buscado} no se encontró en la matriz.")
+    print(f"No se encontrado el valor en la posicion :{resultado}.")
